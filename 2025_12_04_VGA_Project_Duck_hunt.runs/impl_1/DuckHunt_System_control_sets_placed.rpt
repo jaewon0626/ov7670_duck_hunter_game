@@ -1,0 +1,125 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  5 10:17:31 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DuckHunt_System_control_sets_placed.rpt
+| Design       : DuckHunt_System
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   171 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    21 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              33 |           12 |
+| No           | No                    | Yes                    |              60 |           33 |
+| No           | Yes                   | No                     |             152 |           56 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             369 |          116 |
+| Yes          | Yes                   | No                     |              87 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+----------------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal  |                       Enable Signal                      |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+----------------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG  |                                                          |                                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/r_sda_i_1_n_0                   | reset_IBUF                                |                1 |              1 |         1.00 |
+|  pclk_IBUF_BUFG |                                                          | reset_IBUF                                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/r_scl                           | reset_IBUF                                |                1 |              1 |         1.00 |
+|  pclk_IBUF_BUFG |                                                          |                                           |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/bitCount[3]_i_1_n_0             | reset_IBUF                                |                1 |              4 |         4.00 |
+|  xclk_OBUF_BUFG | U_Duck_2/state                                           | U_Duck_2/duck_reset                       |                2 |              5 |         2.50 |
+|  xclk_OBUF_BUFG | U_Duck_1/state                                           | U_Duck_2/duck_reset                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG  | U_BTN_START/E[0]                                         | reset_IBUF                                |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG  | U_BTN_STOP/E[0]                                          | reset_IBUF                                |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/FSM_onehot_sda_state[5]_i_1_n_0 | reset_IBUF                                |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/dataBit[5]_i_1_n_0              | reset_IBUF                                |                4 |              6 |         1.50 |
+|  pclk_IBUF_BUFG | U_Red_Detector/pixel_y                                   | U_Red_Detector/pixel_y[5]_i_1_n_0         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG  | U_SCCB/U_SCCB_controller/r_addr[6]_i_1_n_0               | reset_IBUF                                |                4 |              7 |         1.75 |
+|  pclk_IBUF_BUFG | U_Red_Detector/pixel_x[6]_i_2_n_0                        | U_Red_Detector/pixel_x[6]_i_1_n_0         |                3 |              7 |         2.33 |
+|  pclk_IBUF_BUFG | U_OV7670_Mem_Controller/pixelData[15]                    | reset_IBUF                                |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG  |                                                          | U_SCCB/U_SCCB_controller/SR[0]            |                3 |              8 |         2.67 |
+|  pclk_IBUF_BUFG | U_OV7670_Mem_Controller/wAddr[16]_i_2_n_0                | reset_IBUF                                |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG  | U_BTN_EXIT/E[0]                                          | reset_IBUF                                |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG  | U_BTN_EXIT/hit2_pulse_cnt_reg[7][0]                      | reset_IBUF                                |                3 |              8 |         2.67 |
+|  xclk_OBUF_BUFG | U_Duck_2/duck_x[9]_i_1_n_0                               | U_Duck_2/duck_reset                       |                5 |             10 |         2.00 |
+|  xclk_OBUF_BUFG | U_Duck_2/duck_y[9]_i_1_n_0                               | U_Duck_2/duck_reset                       |                4 |             10 |         2.50 |
+|  xclk_OBUF_BUFG | U_Duck_1/duck_y[9]_i_1__0_n_0                            | U_Duck_2/duck_reset                       |                5 |             10 |         2.00 |
+|  xclk_OBUF_BUFG | U_Duck_1/duck_x[9]_i_1__0_n_0                            | U_Duck_2/duck_reset                       |                5 |             10 |         2.00 |
+|  xclk_OBUF_BUFG | U_Duck_2/spawn_type                                      | U_Duck_2/duck_reset                       |                5 |             11 |         2.20 |
+|  xclk_OBUF_BUFG | U_Duck_1/spawn_type                                      | U_Duck_2/duck_reset                       |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG  | U_Duck_2/E[0]                                            | reset_IBUF                                |                5 |             16 |         3.20 |
+|  pclk_IBUF_BUFG | U_OV7670_Mem_Controller/red_count                        | U_Red_Detector/pixel_y[5]_i_1_n_0         |                4 |             16 |         4.00 |
+|  pclk_IBUF_BUFG | U_OV7670_Mem_Controller/wAddr[16]_i_2_n_0                | U_OV7670_Mem_Controller/wAddr[16]_i_1_n_0 |                7 |             17 |         2.43 |
+|  xclk_OBUF_BUFG | U_VGA_Syncher/U_Pixel_Counter/v_counter[9]_i_1_n_0       | reset_IBUF                                |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG  |                                                          | U_BTN_START/counter[19]_i_1__0_n_0        |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG  |                                                          | U_BTN_STOP/counter[19]_i_1__1_n_0         |                6 |             20 |         3.33 |
+|  xclk_OBUF_BUFG |                                                          | U_Duck_2/duck_reset                       |               11 |             20 |         1.82 |
+|  clk_IBUF_BUFG  |                                                          | U_BTN_SHOOT/counter[19]_i_1_n_0           |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG  |                                                          | U_BTN_EXIT/counter[19]_i_1__2_n_0         |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG  |                                                          | U_BTN_PISTOL/counter[19]_i_1__3_n_0       |                5 |             20 |         4.00 |
+|  xclk_OBUF_BUFG | U_Duck_1/boom_timer[21]_i_1_n_0                          | U_Duck_2/duck_reset                       |                5 |             22 |         4.40 |
+|  xclk_OBUF_BUFG | U_Duck_2/boom_timer[21]_i_1__0_n_0                       | U_Duck_2/duck_reset                       |                6 |             22 |         3.67 |
+|  xclk_OBUF_BUFG | U_Duck_2/wait_timer                                      | U_Duck_2/duck_reset                       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG  | U_BTN_EXIT/FSM_sequential_shoot_state_reg[0][0]          | reset_IBUF                                |               12 |             27 |         2.25 |
+|  clk_IBUF_BUFG  | U_BTN_START/FSM_sequential_shoot_state_reg[1][0]         | reset_IBUF                                |                6 |             27 |         4.50 |
+|  xclk_OBUF_BUFG | U_Duck_1/wait_timer                                      | U_Duck_2/duck_reset                       |                7 |             27 |         3.86 |
+|  xclk_OBUF_BUFG |                                                          |                                           |                9 |             29 |         3.22 |
+|  xclk_OBUF_BUFG |                                                          | reset_IBUF                                |               22 |             40 |         1.82 |
+|  xclk_OBUF_BUFG | U_Duck_1/anim_cnt[22]_i_1__0_n_0                         | U_Duck_2/duck_reset                       |                9 |             42 |         4.67 |
+|  xclk_OBUF_BUFG | U_Duck_2/anim_cnt[22]_i_1_n_0                            | U_Duck_2/duck_reset                       |               10 |             42 |         4.20 |
+|  clk_IBUF_BUFG  |                                                          | reset_IBUF                                |               25 |             43 |         1.72 |
++-----------------+----------------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+

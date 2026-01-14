@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1764897344">
+  <File Type="PA-TCL" Name="DuckHunt_System.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DuckHunt_System_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DuckHunt_System_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DuckHunt_System.vds"/>
+  <File Type="RDS-UTIL" Name="DuckHunt_System_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DuckHunt_System_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DuckHunt_System.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DuckHunt_System_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DuckHunt_System_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Duck_Controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/Duck_Controller.sv"/>
+        <Attr Name="ImportTime" Val="1764402783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Game_Display_Controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/Game_Display_Controller.sv"/>
+        <Attr Name="ImportTime" Val="1764417965"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ImgROM.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/ImgROM.sv"/>
+        <Attr Name="ImportTime" Val="1764404445"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OV7670_Mem_Controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/OV7670_Mem_Controller.sv"/>
+        <Attr Name="ImportTime" Val="1764396902"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OV7670_config_rom.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/OV7670_config_rom.sv"/>
+        <Attr Name="ImportTime" Val="1764386060"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Red_Detector_Threshold.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../20251130_DUCK_HUNTER/20251130_DUCK_HUNTER.srcs/sources_1/new/Red_Detector_Threshold.sv"/>
+        <Attr Name="ImportTime" Val="1764495012"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SCCB_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/SCCB_controller.sv"/>
+        <Attr Name="ImportTime" Val="1763943036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Start_Screen.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/Start_Screen.sv"/>
+        <Attr Name="ImportTime" Val="1764417821"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TOP_SCCB.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/TOP_SCCB.sv"/>
+        <Attr Name="ImportTime" Val="1763944690"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGA_Decoder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/VGA_Decoder.sv"/>
+        <Attr Name="ImportTime" Val="1763701530"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/button_debouncer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/button_debouncer.sv"/>
+        <Attr Name="ImportTime" Val="1764403863"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/frame_buffer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/frame_buffer.sv"/>
+        <Attr Name="ImportTime" Val="1764387088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pclk_gen.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/pclk_gen.sv"/>
+        <Attr Name="ImportTime" Val="1763701442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DuckHunt_System.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/DuckHunt_System.sv"/>
+        <Attr Name="ImportTime" Val="1764418281"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/duck_hunt_background.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/duck_hunt_background.mem"/>
+        <Attr Name="ImportTime" Val="1764402783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/duck_move.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/duck_move.mem"/>
+        <Attr Name="ImportTime" Val="1764402783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bomb.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../1129/20251129_DUCK_HUNTER/20251129_DUCK_HUNTER.srcs/sources_1/new/bomb.mem"/>
+        <Attr Name="ImportTime" Val="1764419211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DuckHunt_System"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/working/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys-3-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1763104728"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
