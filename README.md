@@ -12,15 +12,13 @@
 ## 주요 구현 내용 (Implementation Details)
 ### 시스템 전체 구조 (DuckHunt_System.sv)
 - 게임의 최상위 모듈로, 카메라 입력, 게임 로직, VGA 출력, 버튼 입력을 통합 관리
-- 상태 머신 (FSM): S_WAIT (대기), S_PLAY (게임 중), S_PAUSE (일시정지), S_SHOOT (발사), S_GAMEOVER (종료) 상태로 게임의 흐름을 제어합니다.
+- 상태 머신 (FSM): S_WAIT (대기), S_PLAY (게임 중), S_PAUSE (일시정지), S_SHOOT (발사), S_GAMEOVER (종료) 상태로 게임의 흐름을 제어
 
-B. 카메라 및 영상 처리 (OV7670_..., Red_Detector_...)
+#### 카메라 및 영상 처리 (OV7670_..., Red_Detector_...)
+- 영상 입력: SCCB 프로토콜을 통해 OV7670 카메라를 설정하고, RGB565 포맷의 영상 데이터를 수신
+- 조준 인식 (Red Detection): Red_Detector_Threshold.sv 모듈에서 카메라 중앙 영역(Crosshair)에 들어온 픽셀의 RGB 값을 분석함. 빨간색 성분이 임계값(MIN_RED_PIXELS) 이상일 경우 '조준됨'으로 판정하여 사격 성공 여부를 결정
 
-영상 입력: SCCB 프로토콜을 통해 OV7670 카메라를 설정하고, RGB565 포맷의 영상 데이터를 수신합니다.
-
-조준 인식 (Red Detection): Red_Detector_Threshold.sv 모듈에서 카메라 중앙 영역(Crosshair)에 들어온 픽셀의 RGB 값을 분석합니다. 빨간색 성분이 임계값(MIN_RED_PIXELS) 이상일 경우 '조준됨'으로 판정하여 사격 성공 여부를 결정합니다.
-
-C. 게임 로직 (Duck_Controller.sv)
+#### 게임 로직 (Duck_Controller.sv)
 
 오리 생성 및 이동: 난수(RANDOM_SEED)를 기반으로 오리의 생성 위치, 이동 방향, 속도, 종류를 무작위로 결정합니다.
 
