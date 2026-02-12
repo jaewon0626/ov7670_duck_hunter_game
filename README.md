@@ -11,8 +11,8 @@
 
 ## 주요 구현 내용 (Implementation Details)
 ### 시스템 전체 구조 (DuckHunt_System.sv)
-- 게임의 최상위 모듈로, 카메라 입력, 게임 로직, VGA 출력, 버튼 입력을 통합 관리
-- 상태 머신 (FSM): S_WAIT (대기), S_PLAY (게임 중), S_PAUSE (일시정지), S_SHOOT (발사), S_GAMEOVER (종료) 상태로 게임의 흐름을 제어
+/게임의 최상위 모듈로, 카메라 입력, 게임 로직, VGA 출력, 버튼 입력을 통합 관리
+/상태 머신 (FSM): S_WAIT (대기), S_PLAY (게임 중), S_PAUSE (일시정지), S_SHOOT (발사), S_GAMEOVER (종료) 상태로 게임의 흐름을 제어
 
 #### 카메라 및 영상 처리 (OV7670_..., Red_Detector_...)
 - 영상 입력: SCCB 프로토콜을 통해 OV7670 카메라를 설정하고, RGB565 포맷의 영상 데이터를 수신
